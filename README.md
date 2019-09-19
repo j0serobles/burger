@@ -23,9 +23,10 @@ The user enters a burger name in a text field in the page and adds it to a list 
 ### How To Run <a name="howToRun"></a>
 The application has been deployed to Heroku and is accessible [here](https://ancient-shore-99109.herokuapp.com/)
 
-<video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/engjoserobles-gmail/attachments/11513151/TinyTake19-09-2019-12-12-57.mp4" type="video/mp4">Your browser does not support the video tag.</video><br /><a href="https://www.tinytake.com" title="Powered by TinyTake Screen Capture">Powered by TinyTake Screen Capture</a>
+A demo video can be accessed [here]https://engjoserobles-gmail.tinytake.com/tt/Mzc3NTgzOV8xMTUxMzE1MQ
 
-ElMurcielag0### File Structure <a name="FileStructure"></a>
+
+### File Structure <a name="FileStructure"></a>
 ```
 + burger
 |   .gitignore : Files ignored by git
