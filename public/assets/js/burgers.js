@@ -49,20 +49,18 @@ $(function() {
   });
 
   //////////////////////////////////////////////////////////
-  $(".delete-cat").on("click", function(event) {
+  $(".clear-devoured").on("click", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
 
-    // Get the cat-to-be-deleted's ID:
-    var id = $(this).data("id");
-
-    // Send the DELETE request.
-    $.ajax("/api/cats/" + id, {
+    //Call API to delete all burgers with devoured = true
+    $.ajax("/api/clear-devoured/" , 
+    {
       type: "DELETE"
     }).then(
       function() {
-        console.log("Deleted cat = " + id);
+        console.log("Deleted all devoured burgers.");
         // Reload the page to get the updated list
         location.reload();
       }

@@ -25,7 +25,13 @@ var burger = {
     orm.deleteOne("burgers", condition, function(res) {
       cb(res);
     });
-  }
+  },
+  /////////////////////////////////////////
+  deleteDevoured: function(condition, cb) {
+      orm.deleteDevoured("burgers", condition, function(res) {
+        cb(res);
+      });
+    }
 };
 
 // Export the database functions for the controller (catsController.js).

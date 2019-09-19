@@ -41,6 +41,9 @@ router.put("/api/burgers/:id", function(req, res) {
   });
 });
 /////////////////////////////////////////////////////
+// Deletes one burger -- Not called from front-end
+// in this version. 
+
 router.delete("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
@@ -59,6 +62,17 @@ router.delete("/api/burgers/:id", function(req, res) {
 
 });
 /////////////////////////////////////////////////////
+// Deletes all burgers already devoured
+
+router.delete("/api/clear-devoured", function(req, res) {
+  var condition = " devoured = true " ; 
+
+
+  burger.deleteDevoured(condition,  function(result) {
+    res.status(200).end(); 
+  });
+
+});
 
 // Export routes for server.js to use.
 module.exports = router;
