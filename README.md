@@ -83,7 +83,7 @@ The view uses HTML, javaScript and Handlebars (front end templating engine).
 
 The Controller is pure javaScript logic using the Express npm module.
 
-The Model is implemented using javaScript objects, and a custom ORL set of functions in javaScript.
+The Model is implemented using javaScript objects and a custom set of functions in javaScript as the Object-Relational-Mapping (ORM).
 
 Data persistence for the model is provided by a mySQL database. 
 
@@ -91,7 +91,7 @@ The following diagram shows the interaction of the application's components duri
 
 ![GET root document processing](public/assets/images/burger_get_route_process.JPG)
 
-1) The browser makes a GET request to the listening port of the Express server (endpoint of the listen() method in Express), requesting the root document "/".
+1) The browser makes a GET request to the listening port of the Express server (endpoint of the ```listen()``` method in Express), requesting the root document "/".
 
 2) The Express server executes the ```get()``` method in an Express ```Router()``` object (controller code), handling the "/" route.
 
