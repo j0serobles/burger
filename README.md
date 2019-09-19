@@ -85,5 +85,5 @@ The Model is implemented  using javaScript objects, and a custom ORL set of func
 Data persistence for the model is provided by a mySQL database. 
 
 ### Support <a name="support"></a>
-  If you have any issues installing or using the app, send me a notification at [engjoserobles@gmail.com](mailto:engjoserobles@gmail.com)
+  If you have any issues using the app, send me a notification at [engjoserobles@gmail.com](mailto:engjoserobles@gmail.com)
   
