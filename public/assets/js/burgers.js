@@ -1,4 +1,4 @@
-//Front-end code for the cats
+//Front-end code for the burger app
 
 
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
